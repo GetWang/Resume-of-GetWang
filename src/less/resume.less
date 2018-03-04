@@ -9,7 +9,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*user-select: none;*/
+  user-select: none;
 }
 main, section, header, footer {
   display: block;
@@ -103,7 +103,7 @@ body {
           letter-spacing: 5px;
           @media screen and (max-width: 720px) {
             margin-top: 10px;
-            letter-spacing: 0;
+            letter-spacing: 2px;
             line-height: 1.25;
           }
         }
@@ -262,12 +262,14 @@ body {
       float: left;
       .projt {
         .projt-head {
+          position: relative;
           height: 20px;
           overflow: hidden;
           padding: 10px 0 5px;
           .projt-title {
             display: inline-block;
             height: 20px;
+            overflow: hidden;
             color: #000;
             font-size: 15px;
             font-weight: 500;
@@ -275,10 +277,13 @@ body {
             i {
               color: @color-background-green;
               font-size: 14px;
+              font-style: normal;
             }
           }
           .projt-link {
-            float: right;
+            position: absolute;
+            top: 50%;
+            right: 0;
             height: 20px;
             box-sizing: border-box;
             margin-left: 5px;
@@ -289,6 +294,7 @@ body {
             color: @color-background-green;
             line-height: 18px;
             font-family: Menlo, @font-family;
+            transform: translateY(-8px);
             transition: all 0.2s ease-in-out;
             &:hover {
               color: #fff;
@@ -354,7 +360,7 @@ body {
           .item {
             position: relative;
             margin-bottom: 5px;
-            line-height: 24px;
+            line-height: 22px;
             .icon-dot {
               position: absolute;
               left: 0;
