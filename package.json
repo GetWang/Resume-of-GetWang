@@ -1,0 +1,37 @@
+{
+  "name": "Resume-of-GetWang",
+  "version": "1.0.0",
+  "title": "GetWang's simple resume",
+  "description": "This is my simple and online resume.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GetWang/Resume-of-GetWang.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "css3",
+    "resume",
+    "getwang",
+    "simple"
+  ],
+  "author": {
+    "name": "GetWang",
+    "url": "https://getwang.github.io",
+    "email": "wang_dresimap@qq.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GetWang/Resume-of-GetWang/issues"
+  },
+  "homepage": "https://github.com/GetWang/Resume-of-GetWang#readme",
+  "docs": "https://github.com/GetWang/Resume-of-GetWang",
+  "download": "https://github.com/GetWang/Resume-of-GetWang",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  }
+}
