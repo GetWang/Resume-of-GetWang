@@ -189,20 +189,13 @@ body {
   }
   .content-main {
     width: 100%;
-    padding: 20px 30px 40px;
+    padding: 20px 35px 50px;
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
     background: #fff;
     @media screen and (max-width: 720px) {
       padding: 20px 20px 40px;
-    }
-    .content-left,
-    .content-right {
-      width: 50%;
-      @media screen and (max-width: 930px) {
-        width: 100%;
-      }
     }
     section {
       padding: 10px 15px;
@@ -215,7 +208,7 @@ body {
           position: absolute;
           top: 50%;
           width: 35%;
-          height:0;
+          height: 0;
           border-top: 1px solid @color-background-gray;
         }
         .left-line {
@@ -260,23 +253,40 @@ body {
     }
     .content-left {
       float: left;
+      width: 55%;
       .projt {
+        &.projt-resume {
+          .projt-head {
+            text-align: left;
+          }
+        }
         .projt-head {
           position: relative;
           height: 20px;
           overflow: hidden;
           padding: 10px 0 5px;
+          text-align: center;
+          .projt-date {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 20px;
+            color: #000;
+            font-size: 14px;
+            line-height: 20px;
+            transform: translateY(-8px);
+          }
           .projt-title {
             display: inline-block;
             height: 20px;
             overflow: hidden;
             color: #000;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 20px;
             i {
               color: @color-background-green;
-              font-size: 14px;
+              font-size: 12px;
               font-style: normal;
             }
           }
@@ -308,7 +318,7 @@ body {
               position: relative;
               margin-top: 2px;
               overflow: hidden;
-              line-height: 20px;
+              line-height: 24px;
               .icon-dot {
                 position: absolute;
                 left: 0;
@@ -329,6 +339,7 @@ body {
     }
     .content-right {
       float: right;
+      width: 45%;
       .reward {
         .list {
           padding-bottom: 5px;
@@ -360,7 +371,7 @@ body {
           .item {
             position: relative;
             margin-bottom: 5px;
-            line-height: 22px;
+            line-height: 24px;
             .icon-dot {
               position: absolute;
               left: 0;
@@ -384,6 +395,12 @@ body {
           word-break: break-all;
           line-height: 24px;
         }
+      }
+    }
+    .content-left,
+    .content-right {
+      @media screen and (max-width: 930px) {
+        width: 100%;
       }
     }
   }

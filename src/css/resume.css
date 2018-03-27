@@ -215,7 +215,7 @@ body {
 }
 .content .content-main {
   width: 100%;
-  padding: 20px 30px 40px;
+  padding: 20px 35px 50px;
   box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
@@ -224,16 +224,6 @@ body {
 @media screen and (max-width: 720px) {
   .content .content-main {
     padding: 20px 20px 40px;
-  }
-}
-.content .content-main .content-left,
-.content .content-main .content-right {
-  width: 50%;
-}
-@media screen and (max-width: 930px) {
-  .content .content-main .content-left,
-  .content .content-main .content-right {
-    width: 100%;
   }
 }
 .content .content-main section {
@@ -290,25 +280,40 @@ body {
 }
 .content .content-main .content-left {
   float: left;
+  width: 55%;
+}
+.content .content-main .content-left .projt.projt-resume .projt-head {
+  text-align: left;
 }
 .content .content-main .content-left .projt .projt-head {
   position: relative;
   height: 20px;
   overflow: hidden;
   padding: 10px 0 5px;
+  text-align: center;
+}
+.content .content-main .content-left .projt .projt-head .projt-date {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 20px;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  transform: translateY(-8px);
 }
 .content .content-main .content-left .projt .projt-head .projt-title {
   display: inline-block;
   height: 20px;
   overflow: hidden;
   color: #000;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 20px;
 }
 .content .content-main .content-left .projt .projt-head .projt-title i {
   color: #00b38a;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
 }
 .content .content-main .content-left .projt .projt-head .projt-link {
@@ -336,7 +341,7 @@ body {
   position: relative;
   margin-top: 2px;
   overflow: hidden;
-  line-height: 20px;
+  line-height: 24px;
 }
 .content .content-main .content-left .projt .projt-content .list .item .icon-dot {
   position: absolute;
@@ -353,6 +358,7 @@ body {
 }
 .content .content-main .content-right {
   float: right;
+  width: 45%;
 }
 .content .content-main .content-right .reward .list {
   padding-bottom: 5px;
@@ -383,7 +389,7 @@ body {
 .content .content-main .content-right .skill .list .item {
   position: relative;
   margin-bottom: 5px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .content .content-main .content-right .skill .list .item .icon-dot {
   position: absolute;
@@ -403,6 +409,12 @@ body {
   text-align: justify;
   word-break: break-all;
   line-height: 24px;
+}
+@media screen and (max-width: 930px) {
+  .content .content-main .content-left,
+  .content .content-main .content-right {
+    width: 100%;
+  }
 }
 /* 页面尾部链接 */
 .footer-link {
