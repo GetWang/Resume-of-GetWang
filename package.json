@@ -31,7 +31,7 @@
   "docs": "https://github.com/GetWang/Resume-of-GetWang",
   "download": "https://github.com/GetWang/Resume-of-GetWang",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.2"
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
   }
 }
